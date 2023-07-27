@@ -1,0 +1,113 @@
+/* COMEÇAR PELO RESET */
+* {
+    /* REMOVER A MARGEM */
+    margin: 0;
+    /* REMOVER O ESPAÇAMENTO ENTRE OS ELEMENTOS */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow: hidden;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #192a56;
+    /* 16px na parte de cima e de baixo e 0 nas laterais */
+    padding-top: 16px;
+    color: #fff;
+}
+
+header > .container {
+    /* PARA QUE O TITULO FIQUE NA ESQUERDA E O MENU HAMBURHER NA DIREITA */
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+/* REGRAS PARA O MENU DE NAVEGAÇÃO */ 
+/* VAMOS CENTRALIZAR TODO O CONTEÚDO DO TITULO E DO MENU HAMBURGER CRIANDO UM CONTAINER NO HTML ANTES 
+DO TITULO E TAMBEM DENTRO DO NAV */
+nav {
+    background-color: #575FCF;
+    padding: 16px 0;
+    display: none;
+}
+
+.container {
+    /* largura maxima */
+    max-width: 1024px;
+    /* deve ocupar toda essa largura */
+    width: 100%;
+    /* esta centralizado na horizontal */
+    margin: 0 auto;
+}
+
+/* ESTILISAR OS EVENTOS DENTRO DO MENU "SOBRE - EM DESTAQUE ETC" */
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* REMOVER OS UNDERLINES E MUDAR A COR DOS BOTOES */
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CONSTRUIR AGORA O MENU HAMBURGER - COMEÇAMOS CRIANDO UMA DIV A BAIXO
+DO TITULO H1 */
+.menu-hamburger {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburger span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+}
+
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
