@@ -8,10 +8,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html {
-    overflow: hidden;
-}
-
 /* CABEÇALHO */
 header {
     background-color: #192a56;
@@ -97,17 +93,41 @@ section h2 {
     flex-wrap: wrap;
 }
 
-
 .lista-veiculos li {
     list-style: none;
     max-width: 30%;
+    margin-bottom: 24px;
+}
+
+/* 5% PORQUE TEMOS 3 ITENS POR LINHA NAS IMAGENS, DE MAXIMO DE 30%
+VER LINHA 101 - DESTA FORMA SOBRAM 10% SENDO 5% CADA LADO */
+.item-central {
+    margin: 0 5%;
 }
 
 .lista-veiculos li img {
     max-width: 100%;
 }
 
-
 .lista-veiculos li h3 {
     margin: 16px 0;
+}
+
+.lista-veiculos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: block;
+}
+
+.lista-veiculos li strong {
+    margin: 16px 0;
+    display: block;
 }
