@@ -72,10 +72,6 @@ DO TITULO H1 */
     margin-bottom: 4px;
 }
 
-.container-flex {
-    display: flex;
-}
-
 #sobre img {
     max-width: 400px;
     margin-right: 24px;
